@@ -1,0 +1,143 @@
+/* font-family: "Lexend Deca", sans-serif; */
+* {
+  font-family: "Lexend Deca", sans-serif;
+  font-family: "Inter", sans-serif;
+  border: 0;
+  margin: 0;
+  color: hsla(0, 0%, 100%, 0.75);
+  font-size: 15px;
+}
+.mainCont {
+  background-color: hsl(233, 47%, 7%);
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.cardCont {
+  width: 87%;
+  background-color: hsl(244, 38%, 16%);
+  border-radius: 12px;
+}
+.imgPart {
+  width: 100%;
+}
+#cardImg {
+  width: 100%;
+  height: 230px;
+  display: block;
+  filter: invert(12%) sepia(30%) saturate(1019%) hue-rotate(230deg)
+    brightness(60%) contrast(93%);
+  border-radius: 12px 12px 0 0;
+}
+
+.textPart {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 25px;
+  text-align: center;
+}
+.mainHeading {
+  font-size: 26px;
+  font-weight: 700;
+  color: hsl(0, 0%, 100%);
+  margin-bottom: 15px;
+}
+.highlight {
+  color: #aa5cdb;
+  font-size: 27px;
+}
+.para-1 {
+  margin-bottom: 25px;
+  padding: 0 10px;
+  color: hsla(0, 0%, 100%, 0.6);
+}
+.prosList {
+  display: flex;
+  flex-direction: column;
+}
+.listItem {
+  margin-bottom: 15px;
+  line-height: 1.4;
+}
+.listHead {
+  color: white;
+  font-weight: 700;
+  font-size: 27px;
+}
+.listPara {
+  font-family: "Lexend Deca", sans-serif;
+  color: hsla(0, 0%, 100%, 0.6);
+  font-size: 14px;
+}
+
+@media only screen and (min-width: 800px) {
+  .cardCont {
+    display: flex;
+    width: 80%;
+    flex-direction: row-reverse;
+  }
+  .imgPart {
+    width: 50%;
+    height: 100%;
+  }
+  #cardImg {
+    height: 100%;
+    border-radius: 0 12px 12px 0;
+  }
+  .textPart {
+    width: 50%;
+    padding: 70px;
+    box-sizing: border-box;
+    text-align: left;
+    justify-content: space-between;
+  }
+  .mainHeading {
+    font-size: 40px;
+    margin-bottom: 25px;
+  }
+  .highlight {
+    font-size: 40px;
+  }
+  .para-1 {
+    padding: 0;
+    line-height: 1.7;
+    padding-right: 35px;
+    margin-bottom: 50px;
+  }
+  .prosList {
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-right: 40px;
+    box-sizing: border-box;
+  }
+  .listItem {
+    margin-bottom: 0;
+    line-height: 1.4;
+  }
+  .listHead {
+    color: white;
+    font-weight: 700;
+    font-size: 25px;
+  }
+  .listPara {
+    font-family: "Lexend Deca", sans-serif;
+    color: hsla(0, 0%, 100%, 0.6);
+    font-size: 14px;
+  }
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  left: 15px;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
